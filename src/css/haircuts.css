@@ -1,0 +1,46 @@
+* {
+    background-color: #121212;
+}
+
+.hairs {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    margin: 50px;
+   
+}
+
+.card-body {
+    background-color: #434363;
+}
+
+.card-title {
+    color : white;
+    text-align: center;
+    background-color: #434363;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .hairs {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .hairs {
+        display: grid;
+        grid-template-columns:  100%;
+    }
+}

@@ -101,3 +101,45 @@ function setNewDate(){
 
 /*---Reserva--- */
 
+// Variable para almacenar la fecha seleccionada
+let selectedDate = null;
+
+// Función para manejar el clic en un día del calendario
+function handleDayClick(day) {
+    selectedDate = day;
+    // Mostrar el área de selección de horario
+    document.getElementById('time-selection').style.display = 'block';
+}
+
+// Función para manejar la selección de horario
+function handleTimeSelection(time) {
+    // Mostrar mensaje de confirmación
+    const confirmationMessage = `¡Turno reservado para el día ${selectedDate} a las ${time}!`;
+    alert(confirmationMessage);
+}
+
+// Ejemplo de cómo usar las funciones en tu HTML
+// Puedes llamar a handleDayClick() al hacer clic en un día del calendario
+// Puedes llamar a handleTimeSelection() cuando se seleccione un horario
+// Función para generar las opciones de horario cada hora desde las 9:00 hasta las 17:00
+function generateTimeOptions() {
+    const select = document.getElementById('time');
+    select.innerHTML = ''; // Limpiamos cualquier opción existente
+    
+    // Iteramos desde las 9:00 hasta las 17:00
+    for (let hour = 9; hour <= 17; hour++) {
+        // Formateamos la hora como "HH:00"
+        const time = hour < 10 ? `0${hour}:00` : `${hour}:00`;
+        
+        // Creamos una opción de horario
+        const option = document.createElement('option');
+        option.value = time;
+        option.textContent = time;
+        
+        // Agregamos la opción al select
+        select.appendChild(option);
+    }
+}
+
+// Llamamos a la función para generar las opciones de horario al cargar la página
+generateTimeOptions();

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/barberia.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/barberia.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,8 @@
                 <a href="calendar.html">Reserva tu turno</a>
             </div>
         </nav>
-
+    </header>
+    <main>
         <h2 class="title"> Calendario Interactivo</h2>
         <div class="calendar-i">
             <ol class="calendar-info">
@@ -52,25 +53,10 @@
             <div class="calendar-dates" id="dates"></div><br>
 
         </div>
-
-    </header>
-
-    <main>
-
-        </fieldset>
-        </form>
-        <div class="formContacto">
-            <fieldset>
-                <legend>FORMULARIO DE REGISTRO</legend>
-                <form action="post">
-                    <input type="text" placeholder="Ingrese su nombre"><br>
-                    <input type="mail" placeholder="Ingrese su correo electrónico"><br>
-                    <textarea rows="4" cols="60" placeholder="Ingrese su comentario"></textarea><br>
-                    <input type="submit" name="enviar" value="Enviar">
-                </form>
-            </fieldset>
-
-
+        <div id="time-selection" style="display: none;">
+            <label for="time">Selecciona un horario:</label>
+            <select id="time"></select>
+            <button onclick="handleReservation()">Reservar turno</button>
         </div>
 
 

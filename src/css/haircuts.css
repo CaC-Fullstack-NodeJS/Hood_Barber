@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&display=swap');
 
+header {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+main {
+    font-family: "Unica One", sans-serif;
+}
 
 .hairs {
     display: grid;
@@ -23,10 +31,12 @@ h2 {
 .card {
     border: none;
     margin: 50px auto;
-   
+   max-height: 450px;
 }
 
 .card-img-top{
+    padding: 0;
+    margin: 0;
     max-height: 384px; 
     object-fit: cover;
 }
@@ -34,6 +44,7 @@ h2 {
 
 .card-body-hairscut {
     background-color: #525064;
+    max-height: 70PX;
 }
 
 .card-body-beardctus {
@@ -45,6 +56,11 @@ h2 {
     text-align: center;
     
 }
+
+
+
+
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){

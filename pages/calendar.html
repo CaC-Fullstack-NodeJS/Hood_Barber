@@ -1,175 +1,112 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/barberia.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
 
-    <link rel="stylesheet" href="../src/css/styles.css">
-    <link rel="stylesheet" href="../src/css/calendar.css">
+    <link rel="shortcut icon" href="../assets/img/barberia.ico" type="image/x-icon">
 
     <title>Calendario de Turnos</title>
 </head>
 
 <body>
-
     <header>
-        <nav class="nav">
-            <div>
+        <div class="redes">
+            <h3>info@hoodbarber.com.ar</h3>
+            <h3>INSCRIPCIÓN: 0800-555-01712</h3>
+            <h3>11-3488-2103</h3>
+            <a href="#">Trabaja con nosotros</a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                    style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <hr>
+        <div class="navbar">
+            <ul>
                 <a href="../index.html">Home</a>
-                <a href="#">Quiénes somos</a>
-                <a href="where.html">Dónde encontrarnos</a>
+                <a href="about.html">Quiénes somos</a>
+                <a href="calendar.html#ubicacion">Dónde encontrarnos</a>
+                <img src="../assets/img/logoNode.svg">
                 <a href="haircuts.html">Cortes sugeridos</a>
-                <a href="#">Contacto</a>
-                <a href="calendar.html">Reserva tu turno</a>
-            </div>
-        </nav>
-
-        <h2 class="title"> Calendario Interactivo</h2>
-        <div class="calendar-i">
-            <ol class="calendar-info">
-                <li class="calendar-prev" id="prev-month">&#x21DC;</li>
-                <li class="calendar-month" id="month"> </li>
-                <li class="calendar-year" id="year"></li>
-                <li class="calendar-next" id="next-month">&#x21DD;</li>
-            </ol>
-
-            <ol class="calendar-week">
-                <li class="calendar-day-item">Domingo</li>
-                <li class="calendar-day-item">Lunes</li>
-                <li class="calendar-day-item">Martes</li>
-                <li class="calendar-day-item">Miércoles</li>
-                <li class="calendar-day-item">Jueves</li>
-                <li class="calendar-day-item">Viernes</li>
-                <li class="calendar-day-item">Sábado</li>
-            </ol>
-            <div class="calendar-dates" id="dates"></div><br>
-
+                <a href="calendar.html">Solicita Turno</a>
+            </ul>
         </div>
-
     </header>
 
-    <main>
+    <main class="where">
 
-        </fieldset>
-        </form>
-        <div class="formContacto">
-            <fieldset>
-                <legend>FORMULARIO DE REGISTRO</legend>
-                <form action="post">
-                    <input type="text" placeholder="Ingrese su nombre"><br>
-                    <input type="mail" placeholder="Ingrese su correo electrónico"><br>
-                    <textarea rows="4" cols="60" placeholder="Ingrese su comentario"></textarea><br>
-                    <input type="submit" name="enviar" value="Enviar">
-                </form>
-            </fieldset>
+        <div class="calendar">
+            <br>
+            <h2> Calendario Interactivo</h2>
+            <div class="calendar-i">
+                <ol class="calendar-info">
+                    <li class="calendar-prev" id="prev-month">&#x21DC;</li>
+                    <li class="calendar-month" id="month"> </li>
+                    <li class="calendar-year" id="year"></li>
+                    <li class="calendar-next" id="next-month">&#x21DD;</li>
+                </ol>
 
-
-        </div>
-
-
-    </main>
-
-    <footer>
-        <!--iconos redes-->
-
-    </footer>
-    <script src="../src/js/calendar.js"></script>
-
-
-
-</body>
-
-</html><!DOCTYPE html>
-
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/barberia.ico" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../src/css/styles.css">
-    <link rel="stylesheet" href="../src/css/calendar.css">
-
-    <title>Calendario de Turnos</title>
-</head>
-
-<body>
-
-    <header>
-        <nav class="nav">
-            <div>
-                <a href="../index.html">Home</a>
-                <a href="#">Quiénes somos</a>
-                <a href="where.html">Dónde encontrarnos</a>
-                <a href="#">Cortes sugeridos</a>
-                <a href="#">Contacto</a>
-                <a href="calendar.html">Reserva tu turno</a>
+                <ol class="calendar-week">
+                    <li class="calendar-day-item">Domingo</li>
+                    <li class="calendar-day-item">Lunes</li>
+                    <li class="calendar-day-item">Martes</li>
+                    <li class="calendar-day-item">Miércoles</li>
+                    <li class="calendar-day-item">Jueves</li>
+                    <li class="calendar-day-item">Viernes</li>
+                    <li class="calendar-day-item">Sábado</li>
+                </ol>
+                <div class="calendar-dates" id="dates"></div><br>
             </div>
-        </nav>
+            <div class="date">
+                <h4>Hoy es: </h4>
+                <p id="fecha-hora"></p>
+            </div>
 
-        <h2 class="title"> Calendario Interactivo</h2>
-        <div class="calendar-i">
-            <ol class="calendar-info">
-                <li class="calendar-prev" id="prev-month">&#x21DC;</li>
-                <li class="calendar-month" id="month"> </li>
-                <li class="calendar-year" id="year"></li>
-                <li class="calendar-next" id="next-month">&#x21DD;</li>
-            </ol>
 
-            <ol class="calendar-week">
-                <li class="calendar-day-item">Domingo</li>
-                <li class="calendar-day-item">Lunes</li>
-                <li class="calendar-day-item">Martes</li>
-                <li class="calendar-day-item">Miércoles</li>
-                <li class="calendar-day-item">Jueves</li>
-                <li class="calendar-day-item">Viernes</li>
-                <li class="calendar-day-item">Sábado</li>
-            </ol>
-            <div class="calendar-dates" id="dates"></div><br>
-
+            <hr>
+            <div class="where" id="ubicacion">
+                <br>
+                <h2>NUESTRA UBICACIÓN</h2>
+                <h4> Dirección: Castorstraat 50, 6846 XB Arnhem, Netherlands </h4>
+                <h4> teléfono: 11-3488-2103 </h4>
+                <h4>
+                    <a href="https://wa.me/54911-3488-2103" target="_blank" class="whatsapp-link" style="color: black;">
+                        <i class="fa-brands fa-whatsapp" style="color: #25aa56;"></i> Contáctanos en WhatsApp
+                    </a>
+                </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.0114323426833!2d5.84347977699923!3d51.951982978127845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a93e22b67557%3A0x98764012dc28a6cc!2sThe%20Hood%20Barber!5e0!3m2!1sen!2sar!4v1715755787042!5m2!1sen!2sar" width="500" height="350" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>><br>
+                <div class="map"></div>
+            </div>
         </div>
-
-    </header>
-
-    <main>
-
-        </fieldset>
-        </form>
-        <div class="formContacto">
-            <fieldset>
-                <legend>FORMULARIO DE REGISTRO</legend>
-                <form action="post">
-                    <input type="text" placeholder="Ingrese su nombre"><br>
-                    <input type="mail" placeholder="Ingrese su correo electrónico"><br>
-                    <textarea rows="4" cols="60" placeholder="Ingrese su comentario"></textarea><br>
-                    <input type="submit" name="enviar" value="Enviar">
-                </form>
-            </fieldset>
-
-
-        </div>
-
-
     </main>
 
-    <footer>
-        <!--iconos redes-->
-
+    <footer class="footer">
+        <div class="column">
+            <h4>Texto 1</h4>
+            <h4>Texto 2</h4>
+            <h4>Texto 3</h4>
+            <h4>Texto 4</h4>
+            <h4>Texto 5</h4>
+        </div>
+        <div class="column">
+            <h4>Texto 6</h4>
+            <h4>Texto 7</h4>
+            <h4>Texto 8</h4>
+            <h4>Texto 9</h4>
+            <h4>Texto 10</h4>
+        </div>
+        <img src="../src/img/logo.png" alt="Imagen">
     </footer>
-    <script src="../src/js/calendar.js"></script>
 
+    <div class="derechos">
+        <h5>Derechos reservados © 2024</h5>
+    </div>
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/calendar.js"></script>
 
 
 </body>

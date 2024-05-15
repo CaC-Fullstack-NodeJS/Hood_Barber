@@ -98,6 +98,24 @@ function setNewDate(){
     writeMonth(monthNumber); 
 }
 
+/*hoy es*/
+function mostrarFechaHora() {
+    const ahora = new Date();
+    const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+    const opcionesHora = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+    const fecha = ahora.toLocaleDateString('es-ES', opcionesFecha);
+    const hora = ahora.toLocaleTimeString('es-ES', opcionesHora);
+
+    const fechaHoraElemento = document.getElementById('fecha-hora');
+    fechaHoraElemento.textContent = `${fecha} ${hora}`;
+}
+
+// Llama a la función inmediatamente para mostrar la fecha y hora actual al cargar la página.
+mostrarFechaHora();
+
+// Actualiza la fecha y hora cada segundo.
+setInterval(mostrarFechaHora, 1000);
 
 /*---Reserva--- */
 

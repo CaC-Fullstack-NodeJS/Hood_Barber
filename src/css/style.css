@@ -25,12 +25,7 @@ hr{
 
 .redes{
     width: 100%;
-<<<<<<< HEAD:css/style.css
     background-color: #000000;
-=======
-    height: 60px;
-    background-color: var(--redes-color);
->>>>>>> 3d4998f1dea2841182e53936fb6ad2f8b584c70e:src/css/style.css
     margin: 0 auto;
     text-align: center;
     
@@ -53,15 +48,9 @@ hr{
 
 .navbar{
     width: 100%;
-<<<<<<< HEAD:css/style.css
     height: 120px;
     background-color: #8987A8;
     font-family: "Bebas Neue", sans-serif;
-=======
-    height: 100px;
-    background-color:var(--nav-bar-color) ;
-    font-family: var(--menu-font);
->>>>>>> 3d4998f1dea2841182e53936fb6ad2f8b584c70e:src/css/style.css
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
@@ -89,15 +78,11 @@ a:hover {
     color:var(--hover-color);
 }
 
-<<<<<<< HEAD:css/style.css
 .navbar img{
     width: 100px;
 }
 
 /*PRINCIPAL Y ASIDE*/
-=======
-/*--Index----PRINCIPAL Y ASIDE*/
->>>>>>> 3d4998f1dea2841182e53936fb6ad2f8b584c70e:src/css/style.css
 
 .main{
     display: flex;
@@ -109,12 +94,7 @@ a:hover {
 
 .ppal{
     width: 65%;
-<<<<<<< HEAD:css/style.css
     background-color: #C8C4F5;
-=======
-    height: 900px;
-    background-color: var(--background-color);
->>>>>>> 3d4998f1dea2841182e53936fb6ad2f8b584c70e:src/css/style.css
 }
 
 
@@ -276,7 +256,7 @@ h1 {
 .column h4 {
     margin: 5px 0; /* Espaciado entre los textos */
     font-size: 1rem;
-    color: #fff;
+    color:#000000;
 }
 
 .derechos {
@@ -290,112 +270,5 @@ h5{
     font-size: 1rem;
     text-align: center;
     color: #fff;
-<<<<<<< HEAD:css/style.css
     padding: 8px;
-=======
-}
-
-/*-----Where----------*/
-.where{
-  
-    background-color:var(--background-color);
-}
-.map{
-    display: flex;
-  
-}
-h2{
-    font-family: var(--body-font);
-}
-
-.maps p{
-    font-family: var(--menu-font);
-}
-/*---Calendar---*/
-*{
-    box-sizing: border-box;
-    list-style: none;
-}
-
-.calendar-i{
-    background-color: var(--nav-bar-color);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    max-width: 600px;
-    margin: 1em auto;
-    padding: .5em auto;
-}
-
-.calendar-info{
-    display: flex;
-    text-align: center;
-    padding: 0 2em;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-.calendar-prev,
-.calendar-next {
-    color: var(--footer-color);
-    cursor: pointer;
-    font-size: 2em;
-}
-
-
-.calendar-prev{
-    margin-right: auto;
-}
-
-.calendar-next{
-    margin-left: auto;
-}
-
-.calendar-month,
-.calendar-year{
-    padding: 8% 3%;
-
-}
-
-.calendar-week , 
-.calendar-dates{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-
-.calendar-day-item{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.calendar-dates{
-    line-height: 3;
-    text-align: center;
-    
-}
-
-.today{
-    background-color:var(--letters-color);
-    width: 40%;
-    border-radius: 30%;
-    margin: auto;
-}
-.last-days{
-    opacity: .5;
-}
-
-/*------Reserva---*/
-
-.date{
-    border: solid 1px var(--hover-color);
-    border-radius: 10px;
-    display: inline-block;
-    text-align: center;
-    padding: 10px; 
-    margin: 10px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /
-
->>>>>>> 3d4998f1dea2841182e53936fb6ad2f8b584c70e:src/css/style.css
 }

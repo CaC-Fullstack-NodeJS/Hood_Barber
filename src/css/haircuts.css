@@ -1,31 +1,49 @@
-* {
-    background-color: #121212;
-}
+
 
 .hairs {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 
+.hairscut {
+    padding-top: 50px;
+    background-color: #c8c4f5;
+}
+
+.beardcuts {
+    padding-top: 50px;
+    background-color: #a5a2ca;
+}
+
 h2 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 .card {
     border: none;
-    margin: 50px;
+    margin: 50px auto;
    
 }
 
-.card-body {
-    background-color: #434363;
+.card-img-top{
+    max-height: 384px; 
+    object-fit: cover;
+}
+
+
+.card-body-hairscut {
+    background-color: #525064;
+}
+
+.card-body-beardctus {
+    background-color: #525064;
 }
 
 .card-title {
     color : white;
     text-align: center;
-    background-color: #434363;
+    
 }
 
 

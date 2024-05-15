@@ -13,7 +13,6 @@ hr{
 
 .redes{
     width: 100%;
-    height: 60px;
     background-color: #000000;
     margin: 0 auto;
     text-align: center;
@@ -37,7 +36,7 @@ hr{
 
 .navbar{
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #8987A8;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -67,6 +66,10 @@ a:hover {
     color: #6E6B86;
 }
 
+.navbar img{
+    width: 100px;
+}
+
 /*PRINCIPAL Y ASIDE*/
 
 .main{
@@ -80,7 +83,6 @@ a:hover {
 
 .ppal{
     width: 65%;
-    height: 900px;
     background-color: #C8C4F5;
 }
 
@@ -160,7 +162,7 @@ h2{
 
 /*SERVICIOS*/
 
-.servicios{
+#servicios{
     height: 1200px;
     background-color: #C8C4F5;
 }
@@ -173,7 +175,7 @@ h2{
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -226,7 +228,6 @@ h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 20px;
     display: flex;
     justify-content:space-evenly; /* Para separar las columnas */
     align-items: center; /* Para alinear verticalmente */
@@ -242,6 +243,8 @@ h1 {
 
 .column h4 {
     margin: 5px 0; /* Espaciado entre los textos */
+    font-size: 1rem;
+    color: #fff;
 }
 
 
@@ -257,4 +260,5 @@ h5{
     font-size: 1rem;
     text-align: center;
     color: #fff;
+    padding: 8px;
 }

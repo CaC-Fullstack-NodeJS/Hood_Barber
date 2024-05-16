@@ -24,25 +24,35 @@ hr{
 }
 
 .redes{
-    width: 100%;
-    background-color: #000000;
-    margin: 0 auto;
-    text-align: center;
-    
-}
-
-.redes {
     display: flex;
-    justify-content:space-around; /* Para separar los elementos horizontalmente */
-    align-items: center; /* Para alinear verticalmente */
-    
 }
 
-.redes h3,
+.redes{
+    width: 100%;
+    height: 35px;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
 .redes a {
     color: var(--letters-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: "Unica One", sans-serif;
+    padding-left: 30px;
+    padding-right: 10px;
 }
+
+.informacion,
+.nuestras {
+    flex: 1; /* Para que ocupen el mismo espacio dentro de .redes */
+}
+
+.informacion {
+    margin-right: 10px; /* Espacio entre .informacion y .nuestras */
+}
+
 
 /*NAVBAR*/
 

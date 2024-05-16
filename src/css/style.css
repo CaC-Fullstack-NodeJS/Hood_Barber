@@ -128,7 +128,7 @@ a:hover {
     grid-row: 1;
     z-index: 1;
     font-family: 'Teko', sans-serif;
-    font-size: 10rem;
+    font-size: 8rem;
     text-transform: uppercase;
     animation: glow 4s ease-in-out infinite alternate;
     text-align: center;
@@ -158,7 +158,7 @@ a:hover {
   .ppal p {
     animation-duration: 5s;
     animation-name: slidein;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     margin: 20px;
     color: #8987A8;

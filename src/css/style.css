@@ -290,7 +290,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap:20px;
 }
 
 .card {

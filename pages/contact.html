@@ -40,21 +40,30 @@
         </div>
     </header>
 
-    <main >
-        <h3 class="info"><strong>BARBERHOOD:</strong> Vanguardia y Estilo en Cada Corte En el corazón de la ciudad, donde la modernidad se encuentra
-            con el estilo, surge Barberhood, un espacio dedicado a la transformación y al arte de la barbería. <br>Desde su
-            fundación hace cinco años, Barberhood se ha convertido en el punto de referencia para aquellos que buscan no
-            solo un corte de cabello, sino una experiencia que define tendencias. <br>Con un equipo de barberos expertos y
-            apasionados, cada visita a Barberhood es un viaje hacia la vanguardia del diseño capilar. Nos enorgullecemos
-            de estar siempre al día con las últimas tendencias, ofreciendo cortes que no solo reflejan la personalidad
-            de nuestros clientes, sino que también los posicionan a la vanguardia de la moda. <br> Nuestra filosofía es
-            simple: cada cliente es único y merece un servicio que sea tan individualizado y exclusivo como ellos
-            mismos. Es por eso que, año tras año, nuevos clientes se suman a nuestra familia, confiando en nuestra
-            habilidad para realzar su estilo personal con precisión y creatividad. <br>En Barberhood, cada detalle cuenta.
-            Desde la atmósfera relajada y contemporánea de nuestro local hasta la meticulosa atención que ponemos en
-            cada corte y afeitado, nos aseguramos de que cada visita sea inolvidable. Porque en Barberhood, no solo
-            cortamos cabello, creamos arte.</h3>
-
+    <main>
+        <div class="formContacto">
+            <form action="post">
+                <fieldset>
+                    <legend>Contactanos</legend>
+                    <input type="text" id="nombre" class="campoForm" placeholder="Ingresá tu nombre"><br>
+                    <input type="email" id="email" class="campoForm" placeholder="Ingresá tu mail"><br>
+                    <input type="number" id="telefono" class="campoForm" placeholder="Ingresá tu teléfono"><br>
+                    <label for="sugerido">Enviá tu foto y te sugerimos un corte</label>
+                    <input type="file" accept="image/*"><br>
+                    <textarea name="comentario" id="comentario" placeholder="Ingresá una consulta o comentario" rows="4"
+                        cols="60" class="campoForm"></textarea><br>
+                        <label for="modoCont">¿Cómo querés ser contactado?</label>
+                        <input type="radio">
+                        <label for="contacto1">Whatsapp</label>
+                        <input type="radio">
+                        <label for="contacto2">Llamada</label>
+                        <input type="radio">
+                        <label for="contacto3">Email</label><br>
+                    <input type="submit" name="enviar" value="Enviar" id="btnForm">
+    
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">

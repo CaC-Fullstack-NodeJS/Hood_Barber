@@ -331,6 +331,75 @@ h1 {
     overflow:hidden;
 }
 
+/*----ABOUT*/
+.info{
+    padding: 1em 5em;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+
+/*----FORMULARIO CONTACTO*/
+.formContacto{
+    background-color: #A5A2CA;
+    text-align: center;
+    font-family: var(--body-font);
+    padding: 1em 0em;
+    }
+    
+legend{
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: 1.8em;
+}
+
+::placeholder{
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.fontForm{
+    font-family: var(--body-font);
+}
+
+fieldset{
+    margin: 0em 8em;
+    padding: auto;
+}
+    
+input:focus {
+    color: blue;
+  }
+
+input:textarea{
+    color: blue;
+}
+
+.campoForm{
+    background-color: #bbb9df;
+    border: 1px solid black;
+    width: 40vw;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+}
+
+#btnForm{
+    width: 40vw;
+    padding: 0.25em;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 0.7em;
+    background-color: whitesmoke;
+}
+
+#btnForm:hover{
+    background-color: #7f7bc0;
+}
+
+
+
 
 /*----FOOTER*/
 

@@ -364,8 +364,11 @@ h1 {
 
 .derechos {
     width: 100%;
-    height: 40px;
+    height: 90px;
     background-color: var(--redes-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -375,6 +378,162 @@ h5{
     color: #fff;
     padding: 8px;
 }
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+    .redes{
+        align-items: center;
+        font-size: 13px;
+    }
+    .navbar ul {
+        flex-direction: row;
+        font-size: 25px;
+    }
+    .navbar img{
+        width: 100px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 6rem;
+    }
+
+    .ppal p {
+        font-size: 1.5rem;
+    }
+
+    .slide img {
+        width: 50vw;
+        height: 70vw;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .redes {
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .navbar img{
+        width: 100px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 5rem;
+    }
+
+    .ppal p {
+        font-size: 1.2rem;
+    }
+
+    .slide img {
+        width: 70vw;
+        height: 100vw;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer h4{
+        font-size: 18px;
+        padding: 5px;
+
+
+    }.footer img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes {
+        font-size: 6px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        font-size: 10px;
+    }
+    .navbar img{
+        width: 80px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 4rem;
+    }
+
+    .ppal p {
+        font-size: 1rem;
+    }
+
+    .slide img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer h4{
+        font-size: 10px;
+        padding: 5px;
+    }.footer img{
+        width: 80px;
+    }
+}
+
 
 /*-----Where----------*/
 .where{

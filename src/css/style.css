@@ -30,7 +30,6 @@ hr{
 .redes{
     width: 100%;
     height: 35px;
-    background-color: #000000;
     background-color: var(--redes-color);
     margin: 0 auto;
     text-align: center;
@@ -41,7 +40,7 @@ hr{
 .redes a {
     color: var(--letters-color);
     font-size: 1.2;
-    font-family: "Unica One", sans-serif;
+    font-family: var(--body-font);
     padding-left: 30px;
     padding-right: 10px;
 }
@@ -393,6 +392,7 @@ h2{
 .maps p{
     font-family: var(--menu-font);
 }
+
 /*---Calendar---*/
 *{
     box-sizing: border-box;
@@ -481,84 +481,3 @@ h2{
 
 }
 
-
-
-/*-----haircuts----------*/
-
-.hairs {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
- 
-}
-
-.container {
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-
-.hairscut {
-    padding-top: 50px;
-    background-color: var(--background-color);
-}
-
-.beardcuts {
-    padding-top: 50px;
-    background-color: var(--aside-color);
-}
-
-.h2-title {
-    color: black;
-    text-align: center;
-}
-
-.card-haircuts {
-    margin: 50px auto;
-    max-height: 420px;
-    text-align: center;
-}
-
-.card-hairs {
-    border: 1px solid black;
-    margin: 50px auto;
-    max-height: 420px;
-    text-align: center;
-}
-
-
-.card-img{  
-    max-height: 380px;
-    width: 286px;
-    object-fit: cover; 
-}
-
-
-.card-body-hairscut {
-    background-color: var(--footer-color);
-}
-
-.card-body-beardctus {
-    background-color: var(--footer-color);
-}
-
-.card-title {
-    color : white;
-    text-align: center;
-    
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    .hairs {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    .hairs {
-        display: grid;
-        grid-template-columns:  100%;
-    }
-}

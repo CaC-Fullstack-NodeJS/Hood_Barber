@@ -24,25 +24,37 @@ hr{
 }
 
 .redes{
+    display: flex;
+}
+
+.redes{
     width: 100%;
+    height: 35px;
+    background-color: #000000;
     background-color: var(--redes-color);
     margin: 0 auto;
     text-align: center;
-    
+    padding-top: 10px;
 }
 
-.redes {
-    display: flex;
-    justify-content:space-around; /* Para separar los elementos horizontalmente */
-    align-items: center; /* Para alinear verticalmente */
-    
-}
 
-.redes h3,
 .redes a {
     color: var(--letters-color);
-    font-size: 1.2rem;
+    font-size: 1.2;
+    font-family: "Unica One", sans-serif;
+    padding-left: 30px;
+    padding-right: 10px;
 }
+
+.informacion,
+.nuestras {
+    flex: 1; /* Para que ocupen el mismo espacio dentro de .redes */
+}
+
+.informacion {
+    margin-right: 10px; /* Espacio entre .informacion y .nuestras */
+}
+
 
 /*NAVBAR*/
 
@@ -278,7 +290,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap:20px;
 }
 
 .card {

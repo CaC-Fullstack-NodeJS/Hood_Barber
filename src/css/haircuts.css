@@ -11,6 +11,12 @@ main {
 .hairs {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+ 
+}
+
+.container {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .hairscut {
@@ -23,28 +29,27 @@ main {
     background-color: #a5a2ca;
 }
 
-h2 {
+.h2-title {
     color: black;
     text-align: center;
 }
 
 .card {
-    border: none;
+    border: 1px solid black;
     margin: 50px auto;
-   max-height: 450px;
+    max-height: 420px;
+    text-align: center;
 }
 
-.card-img-top{
-    padding: 0;
-    margin: 0;
-    max-height: 384px; 
-    object-fit: cover;
+.card-img{  
+    max-height: 380px;
+    width: 288px;
+    object-fit: cover; 
 }
 
 
 .card-body-hairscut {
     background-color: #525064;
-    max-height: 70PX;
 }
 
 .card-body-beardctus {
@@ -56,11 +61,6 @@ h2 {
     text-align: center;
     
 }
-
-
-
-
-
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){

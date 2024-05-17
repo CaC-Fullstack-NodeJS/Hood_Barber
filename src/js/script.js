@@ -39,3 +39,6 @@ function showSlides(n) {
 setInterval(() => {
     plusSlides(1);
 }, 5000);
+
+
+//navbar

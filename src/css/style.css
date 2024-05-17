@@ -30,7 +30,6 @@ hr{
 .redes{
     width: 100%;
     height: 35px;
-    background-color: #000000;
     background-color: var(--redes-color);
     margin: 0 auto;
     text-align: center;
@@ -41,7 +40,7 @@ hr{
 .redes a {
     color: var(--letters-color);
     font-size: 1.2;
-    font-family: "Unica One", sans-serif;
+    font-family: var(--body-font);
     padding-left: 30px;
     padding-right: 10px;
 }
@@ -393,6 +392,7 @@ h2{
 .maps p{
     font-family: var(--menu-font);
 }
+
 /*---Calendar---*/
 *{
     box-sizing: border-box;
@@ -480,3 +480,4 @@ h2{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /
 
 }
+

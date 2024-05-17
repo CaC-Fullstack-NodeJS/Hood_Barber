@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&display=swap');
 
 :root {
-    max-width: 100%;   
+    max-width: 100%;  
     --redes-color: #000000; /* Sin espacio entre -- y el nombre de la variable */
     --nav-bar-color: #8987A8;
     --background-color:#C8C4F5;
@@ -9,7 +9,7 @@
     --hover-color:#6E6B86;
     --body-font: "Unica One", sans-serif;
     --footer-color: #525064;
-    --letters-color:#fff; 
+    --letters-color:#fff;
     --aside-color:#A5A2CA;
 }
 
@@ -100,7 +100,7 @@ a:hover {
     flex-direction:row;
     font-weight: 400;
     font-style: normal;
-    
+   
 }
 
 .ppal{
@@ -113,7 +113,7 @@ a:hover {
     width: 100%;
     height: 90%;
     display: flex;
-    
+   
 }
 
 
@@ -145,7 +145,7 @@ a:hover {
     text-align: center;
     color: #212121;
   }
-  
+ 
   .ppal a {
     font-family: 'Teko', sans-serif;
     color: #4db1bc;
@@ -174,13 +174,13 @@ a:hover {
     margin: 20px;
     color: #8987A8;
   }
-  
+ 
   @keyframes slidein {
     from {
       margin-left: 150%;
       width: 150%;
     }
-  
+ 
     to {
       margin-left: 0%;
       width: 100%;
@@ -315,7 +315,7 @@ h1 {
 .card-content p {
     font-size: 16px;
     color: #555;
-    
+   
     margin-bottom: 30px;
 }
 
@@ -331,77 +331,9 @@ h1 {
     overflow:hidden;
 }
 
-/*----ABOUT*/
-.info{
-    padding: 1em 5em;
-    text-align: center;
-    font-size: 1.5em;
-    
-}
-
-
-/*----FORMULARIO CONTACTO*/
-.formContacto{
-    background-color: #A5A2CA;
-    text-align: center;
-    font-family: var(--body-font);
-    padding: 1em 0em;
-    }
-    
-legend{
-    font-weight: bold;
-    margin-top: 0.5em;
-    font-size: 1.8em;
-}
-
-::placeholder{
-    color: #000000;
-    font-size: 1.2em;
-}
-
-.fontForm{
-    font-family: var(--body-font);
-}
-
-fieldset{
-    margin: 0em 8em;
-    padding: auto;
-}
-    
-input:focus {
-    color: blue;
-  }
-
-input:textarea{
-    color: blue;
-}
-
-.campoForm{
-    background-color: #bbb9df;
-    border: 1px solid black;
-    width: 40vw;
-    margin: 0.5em 0em;
-    padding: 0.5em;
-}
-
-#btnForm{
-    width: 40vw;
-    padding: 0.25em;
-    border-radius: 5%;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin: 0.7em;
-    background-color: whitesmoke;
-}
-
-#btnForm:hover{
-    background-color: #7f7bc0;
-}
-
-
-
 
 /*----FOOTER*/
+
 
 .footer{
     width: 100%;
@@ -421,7 +353,7 @@ input:textarea{
 .column {
     display: flex;
     flex-direction: column;
-    
+   
 }
 
 .column h4 {
@@ -432,7 +364,7 @@ input:textarea{
 
 .derechos {
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: var(--redes-color);
     display: flex;
     flex-direction: column;
@@ -447,14 +379,170 @@ h5{
     padding: 8px;
 }
 
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+    .redes{
+        align-items: center;
+        font-size: 13px;
+    }
+    .navbar ul {
+        flex-direction: row;
+        font-size: 25px;
+    }
+    .navbar img{
+        width: 100px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 6rem;
+    }
+
+    .ppal p {
+        font-size: 1.5rem;
+    }
+
+    .slide img {
+        width: 50vw;
+        height: 70vw;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .redes {
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .navbar img{
+        width: 100px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 5rem;
+    }
+
+    .ppal p {
+        font-size: 1.2rem;
+    }
+
+    .slide img {
+        width: 70vw;
+        height: 100vw;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer h4{
+        font-size: 18px;
+        padding: 5px;
+
+
+    }.footer img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes {
+        font-size: 6px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        font-size: 10px;
+    }
+    .navbar img{
+        width: 80px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .ppal, .aside {
+        width: 100%;
+    }
+
+    .ppal h1 {
+        font-size: 4rem;
+    }
+
+    .ppal p {
+        font-size: 1rem;
+    }
+
+    .slide img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer h4{
+        font-size: 10px;
+        padding: 5px;
+    }.footer img{
+        width: 80px;
+    }
+}
+
+
 /*-----Where----------*/
 .where{
-  
+ 
     background-color:var(--background-color);
 }
 .map{
     display: flex;
-  
+ 
 }
 h2{
     font-family: var(--body-font);
@@ -472,7 +560,7 @@ h2{
 
 .calendar-i{
     background-color: var(--nav-bar-color);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 1em auto;
     padding: .5em auto;
@@ -508,7 +596,7 @@ h2{
 
 }
 
-.calendar-week , 
+.calendar-week ,
 .calendar-dates{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -526,7 +614,7 @@ h2{
 .calendar-dates{
     line-height: 3;
     text-align: center;
-    
+   
 }
 
 .today{
@@ -546,7 +634,7 @@ h2{
     border-radius: 10px;
     display: inline-block;
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
     margin: 10px auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /
 
@@ -597,7 +685,7 @@ h2{
 .card-img{  
     max-height: 380px;
     width: 286px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 
@@ -612,7 +700,7 @@ h2{
 .card-title {
     color : white;
     text-align: center;
-    
+   
 }
 
 

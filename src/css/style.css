@@ -20,7 +20,7 @@
 
 hr{
     width: 100%;
-    height: 1px;
+    height: 0.5px;
 }
 
 .redes{
@@ -29,11 +29,11 @@ hr{
 
 .redes{
     width: 100%;
-    height: 35px;
+    height: 65px;
     background-color: var(--redes-color);
     margin: 0 auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 
@@ -67,7 +67,6 @@ hr{
     font-size: 2rem;
     text-align: center;
 }
-
 
 ul{
     display: flex;

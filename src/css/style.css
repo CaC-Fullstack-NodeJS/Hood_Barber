@@ -95,6 +95,11 @@ a:hover {
     width: 100px;
 }
 
+.logoNav{
+    height: 3em;
+    margin: .5em;
+}
+
 /*PRINCIPAL Y ASIDE*/
 
 .main{

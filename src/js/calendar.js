@@ -119,3 +119,12 @@ setInterval(mostrarFechaHora, 1000);
 
 /*---Reserva--- */
 
+function addClickEventToDays() {
+    const dayElements = document.querySelectorAll('.calendar-day-item[data-day]');
+    dayElements.forEach(dayElement => {
+        dayElement.addEventListener('click', (event) => {
+            const day = event.target.getAttribute('data-day');
+            window.location.href = `day.html?day=${day}&month=${monthNumber + 1}&year=${currentYear}`;
+        });
+    });
+}

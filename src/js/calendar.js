@@ -27,22 +27,24 @@ prevMonthDOM.forEach(button => {
 nextMonthDOM.addEventListener('click', nextMonth);
 
 writeMonth(monthNumber)
-function writeMonth (month){
-    for (let i =startDay(); i>0; i--){
-        dates.innerHTML += `<div class="calendar-dates calendar-day-item last-days"> 
-        ${getTotalDays(monthNumber-1)-(i-1)}
-        </div>`;
-    }
-    /*tare los dias del mes ant*/
-    for (let i =1; i<=getTotalDays(month); i ++){
-        if(i===currentDay){
-        dates.innerHTML += `<div class="calendar-dates calendar-day-item today">${i}</div>`;
-        }else{
-            dates.innerHTML += `<div class="calendar-dates calendar-day-item">${i}</div>`;
-        }
-  }
+function writeMonth(month) {
+    dates.innerHTML = ''; // Clear previous dates
 
+    for (let i = startDay(); i > 0; i--) {
+        dates.innerHTML += `<div class="calendar-day-item last-days" day-item="${getTotalDays(monthNumber - 1) - (i - 1)}">${getTotalDays(monthNumber - 1) - (i - 1)}</div>`;
+    }
+
+    for (let i = 1; i <= getTotalDays(month); i++) {
+        if (i === currentDay) {
+            dates.innerHTML += `<div class="calendar-day-item today" day-item="${i}">${i}</div>`;
+        } else {
+            dates.innerHTML += `<div class="calendar-day-item" day-item="${i}">${i}</div>`;
+        }
+    }
+
+    addClickEventToDays(); // Add click event after days are written
 }
+
 function getTotalDays(month){
     if (month=== -1) month= 11;
     
@@ -120,11 +122,11 @@ setInterval(mostrarFechaHora, 1000);
 /*---Reserva--- */
 
 function addClickEventToDays() {
-    const dayElements = document.querySelectorAll('.calendar-day-item[data-day]');
+    const dayElements = document.querySelectorAll('.calendar-day-item[day-item]');
     dayElements.forEach(dayElement => {
         dayElement.addEventListener('click', (event) => {
-            const day = event.target.getAttribute('data-day');
-            window.location.href = `day.html?day=${day}&month=${monthNumber + 1}&year=${currentYear}`;
+            const day = event.target.getAttribute('day-item');
+            window.location.href = `contact.html?day=${day}&month=${monthNumber + 1}&year=${currentYear}`;
         });
     });
 }

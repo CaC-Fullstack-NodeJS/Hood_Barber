@@ -26,36 +26,41 @@ hr{
     height: 0.5px;
 }
 
-.redes{
-    display: flex;
-}
 
 .redes{
-    width: 100%;
-    height: 65px;
     background-color: var(--redes-color);
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 15px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-
-.redes a {
-    color: var(--letters-color);
-    font-size: 1.2;
-    font-family: var(--body-font);
-    padding-left: 30px;
-    padding-right: 10px;
+.redes ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
 }
 
-.informacion,
-.nuestras {
-    flex: 1; /* Para que ocupen el mismo espacio dentro de .redes */
-}
-
-.informacion {
-    margin-right: 10px; /* Espacio entre .informacion y .nuestras */
-}
+.redes li {
+    margin: 0 10px;
+  }
+  
+  .redes a {
+    color: white;
+    text-decoration: none;
+    padding: 50px 50px;
+  }
+  
+  .redes img {
+    width: 80px;
+    height: auto;
+  }
 
 
 /*NAVBAR*/
@@ -71,29 +76,36 @@ hr{
     text-align: center;
 }
 
-ul{
+.navbar ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-ul >img{
-    width: 120px;
-    margin-top: 10px;
-}
-a {
-    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
     color: white;
-    margin: 10px;
-}
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  .navbar img {
+    width: 110px;
+    height: auto;
+  }
 
 a:hover {
     color:var(--hover-color);
 }
 
-.navbar img{
-    width: 100px;
-}
+
 
 /*PRINCIPAL Y ASIDE*/
 
@@ -388,14 +400,19 @@ h5{
 
     .redes{
         align-items: center;
-        font-size: 13px;
+        font-size: 12px;
     }
+
+    .redes img{
+        width: 60px;
+    }
+
     .navbar ul {
         flex-direction: row;
-        font-size: 25px;
+        font-size: 20px;
     }
     .navbar img{
-        width: 100px;
+        width: 90px;
     }
 
     .main {
@@ -432,9 +449,13 @@ h5{
 }
 
 @media (max-width: 768px) {
-    .redes {
+    .redes{
         align-items: center;
-        font-size: 10px;
+        font-size: 6px;
+    }
+
+    .redes img{
+        width: 20px;
     }
 
     .navbar ul {
@@ -486,16 +507,20 @@ h5{
 }
 
 @media (max-width: 480px) {
-    .redes {
+    .redes{
+        align-items: center;
         font-size: 6px;
     }
 
+    .redes img{
+        width: 18px;
+    }
+
     .navbar ul {
-        flex-direction: row;
-        font-size: 10px;
+        font-size: 8px;
     }
     .navbar img{
-        width: 80px;
+        width: 60px;
     }
 
     .main {
@@ -536,7 +561,6 @@ h5{
     }
 }
 
-
 /*-----Where----------*/
 .where{
  
@@ -553,6 +577,7 @@ h2{
 .maps p{
     font-family: var(--menu-font);
 }
+
 
 /*---Calendar---*/
 *{
@@ -721,3 +746,81 @@ h2{
         grid-template-columns:  100%;
     }
 }
+
+
+/*----ABOUT*/
+.info{
+    padding: 1em 5em;
+    text-align: center;
+    font-size: 1.5em;
+    height: 700px;
+    
+    background-color: #A5A2CA;
+    
+}
+
+
+/*----FORMULARIO CONTACTO*/
+.formContacto{
+    background-color: #A5A2CA;
+    text-align: center;
+    font-family: var(--body-font);
+    padding: 1em 0em;
+    }
+    
+legend{
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: 1.8em;
+}
+
+::placeholder{
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.fontForm{
+    font-family: var(--body-font);
+}
+
+fieldset{
+    margin: 0em 8em;
+    padding: auto;
+}
+    
+input:focus {
+    color: blue;
+  }
+
+input:textarea{
+    color: blue;
+}
+
+.campoForm{
+    background-color: #bbb9df;
+    border: 1px solid black;
+    width: 40vw;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+}
+
+#btnForm{
+    width: 40vw;
+    padding: 0.25em;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 0.7em;
+    background-color: whitesmoke;
+}
+
+#btnForm:hover{
+    background-color: #7f7bc0;
+}
+
+.contacto{
+        height: 700px;
+        background-color: #A5A2CA;
+}
+
+

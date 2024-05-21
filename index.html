@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <link rel="shortcut icon" href="./assets/img/barberia.ico" type="image/x-icon">
+
+  <title>Barber Hood</title>
+</head>
+
+<body>
+  <header>
+    <div class="redes">
+      <div class="informacion">
+        <a href="#"><i class="fa-regular fa-envelope" style="color: #ffffff"></i>info@hoodbarber.com.ar</a>
+        <a href="#"><i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>11-1234-5678</a>
+        <a href="https://github.com/CaC-Fullstack-NodeJS" target="_blank"><img src="./src/img/logo_vicrofama.svg"
+          alt="dev-logo"></a>
+        <a href="">Nuestras redes</a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+    <hr>
+
+    <div class="navbar">
+      <ul>
+        <li> <a href="#servicios">Servicios</a>
+        </li>
+        <li> <a href="./pages/haircuts.html">Cortes sugeridos</a>
+        </li>
+        <li> <a href="./pages/about.html">Quiénes somos</a>
+        </li>
+        <li> <img src="./src/img/logo_fondo_transp.svg" alt="logo">
+        </li>
+        <li> <a href="./pages/calendar.html">Reservá tu Turno</a>
+        </li>
+        <li> <a href="./pages/contact.html">Contáctanos</a>
+        </li>
+        <li> <a href="./pages/calendar.html#ubicacion">Dónde encontrarnos</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <hr>
+
+  <main>
+    <div class="main">
+      <div class="ppal">
+        <h1>
+          <span class="one">H</span><span class="two">O</span><span class="three">O</span><span class="four">D</span>
+          <span class="five">BARBER</span>
+        </h1>
+        <p>
+          En HOOD BARBER queremos hacerte la vida más fácil. Ahora podés
+          reservar un cita con tu barbero favorito online. Es muy fácil,
+          rápido y cómodo.
+        </p>
+        <img src="./src/img/servicios/2.svg" alt="2" class="centro">
+      </div>
+      <div class="aside">
+        <h2>CORTES PERSONALIZADOS</h2>
+        <div id="carousel-container">
+          <div class="slide fade">
+            <img src="./src/img/novedades/1.svg" alt="Imagen 1">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/2.svg" alt="Imagen 2">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/3.svg" alt="Imagen 3">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/4.svg" alt="Imagen 4">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/5.svg" alt="Imagen 5">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/6.svg" alt="Imagen 6">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/7.svg" alt="Imagen 7">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/8.svg" alt="Imagen 8">
+          </div>
+          <div class="slide fade">
+            <img src="./src/img/novedades/9.svg" alt="Imagen 9">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="servicios">
+      <div class="cards">
+        <h1>NUESTROS SERVICIOS</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <h2>Corte Cabello</h2>
+              <p>
+                Confección del corte con su respectiva asesoría, incluye el
+                lavado y styling sin cargo.
+              </p>
+              <img src="./src/img/servicios/1.svg" alt="1">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h2>Afeitado Tradicional</h2>
+              <p>
+                Rasurado completo con toallas calientes y navaja. Cierre
+                técnico con productos más la asesoría para el cuidado de la
+                piel.
+              </p>
+              <img src="./src/img/servicios/2.svg" alt="2">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h2>Afeitado contemporaneo</h2>
+              <p>
+                Rasurado completo con maquinas en seco. Cierre técnico con
+                productos más la asesoría para el cuidado de la piel.
+              </p>
+              <img src="./src/img/servicios/3.svg" alt="3">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h2>Recorte de barba</h2>
+              <p>
+                Mejoramos el aspecto con los ángulos de cortes
+                correspondientes dependiendo de su longitud y tupidez..
+              </p>
+              <img src="./src/img/servicios/4.svg" alt="4">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h2>Perfilado Spa</h2>
+              <p>
+                Marcado de contornos con navaja y toallas calientes. Cierre
+                técnico con productos más la asesoría para el cuidado de la
+                barba / piel.
+              </p>
+              <img src="./src/img/servicios/5.svg" alt="5">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h2>Perfilado contemporaneo</h2>
+              <p>
+                Marcado de contornos con máquinas o navaja, pero (en seco).
+                Cierre técnico con productos más la asesoría para el cuidado
+                de la barba / piel.
+              </p>
+              <img src="./src/img/servicios/6.svg" alt="6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr>
+
+  <footer class="footer">
+    <div class="column">
+      <h4>HOOD BARBER - BARBERIA</h4>
+      <h4>CASA CENTRAL:Castorstraat 50, 6846 XB Arnhem, Netherlands</h4>
+      <h4>info@hoodbarber.com.ar</h4>
+      <h4>11-3488-2103</h4>
+    </div>
+    <div class="column">
+      <h4>Sucursales</h4>
+      <h4>Envia tu CV</h4>
+      <h4>Trabaja con nosotros</h4>
+    </div>
+    <a href="./index.html"><img src="./src/img/logo_fondo_transp.svg" alt="Imagen"></a>
+  </footer>
+
+  <div class="derechos">
+    <h5>Derechos reservados © 2024</h5>
+
+    <a href="https://github.com/CaC-Fullstack-NodeJS" target="_blank"><img src="./src/img/logo_vicrofama.svg"
+        alt="dev-logo" height="40"></a>
+  </div>
+
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

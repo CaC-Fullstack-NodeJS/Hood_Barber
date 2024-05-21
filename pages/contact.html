@@ -55,21 +55,20 @@
           <input type="email" id="email" class="campoForm" placeholder="Ingresá tu mail"><br>
           <input type="number" id="telefono" class="campoForm" placeholder="Ingresá tu teléfono"><br>
           <label for="sugerido" class="fontForm">Enviá tu foto y te sugerimos un corte
-            
           </label>
-          <input type="file" accept="image/*"><br>
+          <input type="file" id="sugerido" accept="image/*"><br>
           <textarea name="comentario" id="comentario" placeholder="Ingresá una consulta o comentario" rows="4" cols="60"
             class="campoForm" style="color: blue;">
           </textarea><br>
           <label for="modoCont" class="fontForm">¿Cómo querés ser contactado?
           </label>
           <label>Whatsapp
-            <input name="cont" type="radio" value="Whatsapp">
+            <input name="cont" id="modoCont" type="radio" value="Whatsapp">
           </label>
           <label>Llamada
             <input name="cont" type="radio" value="Llamada" >
           </label>
-          <label >Email
+          <label>Email
             <input name="cont" type="radio" value="Email" >
           </label>
           <br>

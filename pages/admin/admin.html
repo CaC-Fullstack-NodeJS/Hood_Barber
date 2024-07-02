@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion Hood-Barder</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <a class="salir" href="../../index.html">SALIR</a>
+    </header>
+    
+    <img class="logo" src="../../src/img/logo_vicrofama.svg">
+    <div class="login-container">
+        <h2>Login Administracion</h2>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="login()">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>
+    
+</body>
+</html>

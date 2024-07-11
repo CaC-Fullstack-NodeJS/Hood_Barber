@@ -4,7 +4,7 @@ function login() {
 
     if (username === "admin" && password === "admin") {
         alert("Bienvenido Admin");
-        window.location.href = "https://vercel-codo2024.vercel.app/";
+        window.location.href = "https://vercel-codo2024-nuevo.vercel.app/";
     } else {
         alert("Usuario o contraseña incorrectos");
     }
